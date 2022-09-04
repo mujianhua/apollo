@@ -76,3 +76,7 @@ docs/demo_guide/*.record
 
 # Flamegraph files
 tools/FlameGraph
+
+#sublime
+apollo_sublime.sublime-project
+apollo_sublime.sublime-workspace
