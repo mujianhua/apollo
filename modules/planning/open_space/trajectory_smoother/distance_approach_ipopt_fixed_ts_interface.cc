@@ -55,10 +55,10 @@ DistanceApproachIPOPTFixedTsInterface::DistanceApproachIPOPTFixedTsInterface(
   g_ = {l_ev_ / 2, w_ev_ / 2, l_ev_ / 2, w_ev_ / 2};
   offset_ = (ego_(0, 0) + ego_(2, 0)) / 2 - ego_(2, 0);
   obstacles_edges_sum_ = obstacles_edges_num_.sum();
-  state_result_ = Eigen::MatrixXd::Zero(4, horizon_ + 1);
+  state_result_ = Eigen::MatrixXd::Zero(4, horizon_ + 1); // x,y,phi,v
   dual_l_result_ = Eigen::MatrixXd::Zero(obstacles_edges_sum_, horizon_ + 1);
   dual_n_result_ = Eigen::MatrixXd::Zero(4 * obstacles_num_, horizon_ + 1);
-  control_result_ = Eigen::MatrixXd::Zero(2, horizon_ + 1);
+  control_result_ = Eigen::MatrixXd::Zero(2, horizon_ + 1); // steer,a
   time_result_ = Eigen::MatrixXd::Zero(1, horizon_ + 1);
   state_start_index_ = 0;
   control_start_index_ = 4 * (horizon_ + 1);
