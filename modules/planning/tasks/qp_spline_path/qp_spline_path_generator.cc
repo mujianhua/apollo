@@ -276,6 +276,8 @@ bool QpSplinePathGenerator::AddConstraint(const QpFrenetFrame& qp_frenet_frame,
   const int dim =
       (knots_.size() - 1) * (qp_spline_path_config_.spline_order() + 1);
   constexpr double param_range = 1e-4;
+
+  /* spline 最低次数项系数约束 */
   for (int i = qp_spline_path_config_.spline_order(); i < dim;
        i += qp_spline_path_config_.spline_order() + 1) {
     Eigen::MatrixXd mat = Eigen::MatrixXd::Zero(1, dim);

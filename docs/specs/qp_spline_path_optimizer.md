@@ -127,7 +127,6 @@ $$
 
 Finally, we have
 
-<p>
 $$
 \int\limits_{0}^{d_i} 
 f'_i(s)^2 ds =\begin{vmatrix} a_{i0} & a_{i1} & a_{i2} & a_{i3} & a_{i4} & a_{i5} \end{vmatrix} 
@@ -142,7 +141,6 @@ f'_i(s)^2 ds =\begin{vmatrix} a_{i0} & a_{i1} & a_{i2} & a_{i3} & a_{i4} & a_{i5
 \cdot 
 \begin{vmatrix} a_{i0} \\ a_{i1} \\ a_{i2} \\ a_{i3} \\ a_{i4} \\ a_{i5} \end{vmatrix}
 $$
-</p>
 
 Please notice that we got a 6 x 6 matrix to represent the derivative cost of 5th order spline.
 
@@ -327,4 +325,3 @@ $$
  \end{vmatrix}
 $$
 </p>
-
